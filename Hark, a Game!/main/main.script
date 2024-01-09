@@ -3,8 +3,20 @@ function init(self)
 	msg.post("@render:", "use_fixed_fit_projection", { near = -1, far = 1 })
 end
 
+--turn these print statements into messages
 function on_input(self, action_id, action)
-	if action_id == hash("touch") and action.pressed then
-		print("Touch!")
+	if action_id == hash("left") and action.pressed then
+		print("moved left") end 
+	if action_id == hash("right") and action.pressed then
+		print("moved right") end
+	if action_id == hash("up") and action.pressed then
+		print("moved up") end
+	if action_id == hash("down") and action.pressed then
+		print("moved down") end
 	end
-end
+
+
+
+
+
+

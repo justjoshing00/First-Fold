@@ -1,0 +1,6 @@
+
+--move my doofus around
+function on_message(self, message_id, message, sender)
+	--recieve message, move object
+end
+
